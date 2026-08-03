@@ -92,3 +92,141 @@ for (let i = 1; i < total; i++) {
     });
 
 }
+
+
+// ===============================================================
+
+
+(() => {
+
+    const track = document.querySelector(".effect-track");
+    const cards = gsap.utils.toArray(".effect-card");
+    const infos = gsap.utils.toArray(".effect-info");
+
+    const prevBtn = document.querySelector(".effect-prev");
+    const nextBtn = document.querySelector(".effect-next");
+
+    const currentNum = document.querySelector(".current");
+    const totalNum = document.querySelector(".total");
+
+    const cardWidth = 887; // 587 + gap(300)
+
+    let current = 0;
+    let isAnimating = false;
+
+    totalNum.textContent = cards.length;
+    currentNum.textContent = current + 1;
+
+    // -----------------------------
+    // 초기 상태
+    // -----------------------------
+
+    gsap.set(track, {
+        x: 0
+    });
+
+    infos.forEach((info, i) => {
+
+        if (i === 0) {
+
+            gsap.set(info, {
+                autoAlpha: 1,
+                y: 0
+            });
+
+            info.classList.add("active");
+
+        } else {
+
+            gsap.set(info, {
+                autoAlpha: 0,
+                y: 20
+            });
+
+            info.classList.remove("active");
+
+        }
+
+    });
+
+    cards.forEach((card, i) => {
+        card.classList.toggle("active", i === 0);
+    });
+
+    // -----------------------------
+    // 슬라이드
+    // -----------------------------
+
+    function moveSlide(next) {
+
+        if (isAnimating) return;
+        if (next < 0 || next >= cards.length) return;
+
+        isAnimating = true;
+
+        const tl = gsap.timeline({
+
+            defaults: {
+                ease: "power3.inOut"
+            },
+
+            onComplete() {
+
+                cards[current].classList.remove("active");
+                infos[current].classList.remove("active");
+
+                current = next;
+
+                cards[current].classList.add("active");
+                infos[current].classList.add("active");
+
+                currentNum.textContent = current + 1;
+
+                isAnimating = false;
+
+            }
+
+        });
+
+        // 이미지 이동
+        tl.to(track, {
+            x: -(cardWidth * next),
+            duration: .8
+        }, 0);
+
+        // 현재 텍스트
+        tl.to(infos[current], {
+            autoAlpha: 0,
+            y: -20,
+            duration: .3
+        }, 0);
+
+        // 다음 텍스트
+        tl.fromTo(infos[next], {
+            autoAlpha: 0,
+            y: 20
+        }, {
+            autoAlpha: 1,
+            y: 0,
+            duration: .35
+        }, .25);
+
+    }
+
+    // -----------------------------
+    // 버튼
+    // -----------------------------
+
+    nextBtn.addEventListener("click", () => {
+
+        moveSlide(current + 1);
+
+    });
+
+    prevBtn.addEventListener("click", () => {
+
+        moveSlide(current - 1);
+
+    });
+
+})();
