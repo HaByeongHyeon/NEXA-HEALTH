@@ -158,3 +158,6 @@ a {
 	color: inherit;
 	cursor: pointer;
 }
+li {
+	cursor: pointer;
+}

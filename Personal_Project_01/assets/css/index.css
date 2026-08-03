@@ -1,3 +1,48 @@
+/* 헤더 */
+.header {
+    width: 100%;
+    max-width: 1920px;
+    height: 100px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #11111120;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 280px;
+    height: 50px;
+}
+
+.menu-list {
+    width: 780px;
+    display: flex;
+    padding: 20px 10px;
+    justify-content: space-between;
+}
+
+.menu-list>li {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.menu-list>li>a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-list>li:hover {
+    color: #2D9CFF;
+}
+
+/* ======================================== */
+
+
 /* =========================
     hero section 01
 ========================= */
