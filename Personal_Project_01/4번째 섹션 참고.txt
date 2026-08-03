@@ -1,0 +1,247 @@
+================================== HTML ==================================
+
+
+
+
+<!-- START :: Swiper_f1b5ed29 -->
+					<div class="Swiper Swiper_f1b5ed29">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="item-62e909ba">
+										<div class="full-box box-b096e6a0">
+											<img src="/resources/front/assets/img/taekwang/020821155.png"
+												alt="그림자" />
+										</div>
+										<div class="full-box box-8a5ab99d">
+											<img
+												src="/resources/front/assets/img/taekwang/020820943_1.jpg"
+												alt="" />
+											<div class="info-adb1820b">
+												<div class="text-0f48ce75">
+													<!--ESG<br/>Management-->
+													ESG <br />Management
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item-62e909ba">
+										<div class="full-box box-b096e6a0">
+											<img src="/resources/front/assets/img/taekwang/020821155.png"
+												alt="그림자" />
+										</div>
+										<div class="full-box box-8a5ab99d">
+											<img
+												src="/resources/front/assets/img/taekwang/020820943_2.jpg"
+												alt="" />
+											<div class="info-adb1820b">
+												<div class="text-0f48ce75">
+													<!--ESG<br/>Management-->
+													Environmental <br />management
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item-62e909ba">
+										<div class="full-box box-b096e6a0">
+											<img src="/resources/front/assets/img/taekwang/020821155.png"
+												alt="그림자" />
+										</div>
+										<div class="full-box box-8a5ab99d">
+											<img
+												src="/resources/front/assets/img/taekwang/020820943_3.jpg"
+												alt="" />
+											<div class="info-adb1820b">
+												<div class="text-0f48ce75">
+													<!--ESG<br/>Management-->
+													Ethical <br />management
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item-62e909ba">
+										<div class="full-box box-b096e6a0">
+											<img src="/resources/front/assets/img/taekwang/020821155.png"
+												alt="그림자" />
+										</div>
+										<div class="full-box box-8a5ab99d">
+											<img
+												src="/resources/front/assets/img/taekwang/020820943_4.jpg"
+												alt="" />
+											<div class="info-adb1820b">
+												<div class="text-0f48ce75">
+													<!--ESG<br/>Management-->
+													human rights <br />management
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item-62e909ba">
+										<div class="full-box box-b096e6a0">
+											<img src="/resources/front/assets/img/taekwang/020821155.png"
+												alt="그림자" />
+										</div>
+										<div class="full-box box-8a5ab99d">
+											<img
+												src="/resources/front/assets/img/taekwang/020820943_5.jpg"
+												alt="" />
+											<div class="info-adb1820b">
+												<div class="text-0f48ce75">
+													<!--ESG<br/>Management-->
+													Sharing <br />Management
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+
+================================== js ==================================
+
+
+* START :: Wrap_e6bb92cd */
+const Wrap_e6bb92cd = {};
+Wrap_e6bb92cd.init = function () {
+  if (AppInfo.desigType == 'mobile') return;
+  
+  const $wrap = $(document.currentScript.parentElement);
+  const $ani_box_0 = $wrap.find(`.ani-box-a419511a.step-0`);
+  const $ani_box_1 = $wrap.find(`.ani-box-a419511a.step-1`);
+  const $ani_box_target = $wrap.find(`.ani-box-a419511a.target`);
+  const $Swiper_f1b5ed29 = $wrap.find(`.Swiper_f1b5ed29`);
+  const $panel_84401bd0 = $wrap.find(`.panel-84401bd0`);
+  
+  const tl = gsap.timeline();
+  
+  tl.set($ani_box_0, {
+    width: function () {
+      const c = MathUtil.hypotenuse($($wrap).width(), $($wrap).height());
+      return `${c}px`;
+    },
+    height: function () {
+      const c = MathUtil.hypotenuse($($wrap).width(), $($wrap).height());
+      return `${c}px`;
+    },
+  });
+  
+  tl.set($ani_box_target, {
+    x: function () {
+      return $ani_box_0.rect().x;
+    },
+    y: function () {
+      return $ani_box_0.rect().y - $wrap.rect().y;
+    },
+    width: function () {
+      return $ani_box_0.width();
+    },
+    height: function () {
+      return $ani_box_0.height();
+    },
+  });
+  
+  tl.set($Swiper_f1b5ed29, {
+    opacity: 0,
+    'pointer-events': 'none',
+    
+  });
+  tl.set($panel_84401bd0, {
+    opacity: 0,
+  });
+  
+  tl.to($ani_box_target, {
+    duration: 10,
+    ease: 'none',
+    x: function () {
+      return $ani_box_1.rect().x;
+    },
+    y: function () {
+      return $ani_box_1.rect().y - $wrap.rect().y;
+    },
+    width: function () {
+      return $ani_box_1.width();
+    },
+    height: function () {
+      return $ani_box_1.height();
+    },
+  }, '<');
+  
+  tl.to($Swiper_f1b5ed29, {
+    opacity: 1,
+  });
+  
+  tl.to($panel_84401bd0, {
+    opacity: 1,
+  }, '<');
+  
+  tl.set($Swiper_f1b5ed29, {
+    'pointer-events': 'auto',
+  });
+  
+  tl.to($ani_box_target, {
+    opacity: 0,
+  });
+  
+  tl.to({}, {
+    duration: 20,
+    onUpdate: function () {
+      /*
+      const $swiper = $(`.Swiper_f1b5ed29 .swiper`);
+      if ($swiper.length == 0) return;
+      const swiper_ins = $swiper.prop('swiper');
+      if (!swiper_ins) return;
+      
+      const progress = this.progress();
+      const total_slides = swiper_ins.slides.length;
+      
+      // progress瑜� 湲곕컲�쇰줈 �꾩옱 蹂댁뿬以� �щ씪�대뱶 �몃뜳�� 怨꾩궛
+      const target_index = Math.floor(progress * (total_slides - 1));
+      
+      // �꾩옱 �щ씪�대뱶�� 紐⑺몴 �щ씪�대뱶媛� �ㅻ� 寃쎌슦�먮쭔 �щ씪�대뱶 蹂�寃�
+      if (swiper_ins.activeIndex !== target_index) {
+        swiper_ins.slideTo(target_index);
+      }
+       */
+    }
+  });
+  
+  tl.to({}, {duration: 5});
+  
+  const sct = ScrollTrigger.create({
+    id: `吏��띻��κ꼍��`,// 留덉빱 �쒖떆�좊븣 �대쫫 遺���
+    // markers: true,
+    
+    // �꾩닔 �듭뀡
+    animation: tl,// �몄쐢 �곌껐
+    trigger: $wrap,// �몃━嫄� 吏���
+    
+    // �몃━嫄� & 湲곗��� �ㅼ젙
+    // end: `bottom 25%`,
+    // start: `top 75%`,
+    end: `bottom top`,
+    start: `top top`,
+    scrub: 1,
+    pin: true,
+    
+    // toggleActions: `play none reverse pause`,
+    toggleActions: `play none none reverse`,
+    toggleClass: `scroll-trigger-active`,// �몃━嫄� �묐룞 踰붿쐞�먯꽌 �대옒�� 遺���
+    
+    // 遺�媛� �듭뀡
+    invalidateOnRefresh: true,// 由ъ궗�댁쫰 ����
+  });
+}
+/* // END :: Wrap_e6bb92cd */
