@@ -1,0 +1,198 @@
+/* 헤더 */
+.header {
+    width: 100%;
+    max-width: 1920px;
+    height: 100px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #11111120;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 280px;
+    height: 50px;
+}
+
+.menu-list {
+    width: 780px;
+    display: flex;
+    padding: 20px 10px;
+    justify-content: space-between;
+}
+
+.menu-list>li {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.menu-list>li>a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-list>li:hover {
+    color: #2D9CFF;
+}
+
+
+/* ======================================== */
+
+
+.kv-sec {
+    width: 100%;
+    padding: 220px 0 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kv-sec h2 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    color: #111;
+    margin-bottom: 200px;
+}
+
+.kv-img-wrap {
+    width: 894px;
+    height: 502px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.kv-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ======================================== */
+
+.kv-sec-2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ==========================
+        Background
+========================== */
+
+.kv-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.kv-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ==========================
+        Overlay
+========================== */
+
+.kv-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .45);
+    z-index: 2;
+}
+
+/* ==========================
+        Text Wrap
+========================== */
+
+.kv-text-wrap {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+}
+
+/* ==========================
+        Content
+========================== */
+
+.kv-content {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 40px;
+
+    text-align: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(40px);
+
+    pointer-events: none;
+}
+
+.kv-content.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+
+    pointer-events: auto;
+}
+
+/* ==========================
+            Title
+========================== */
+
+.kv-content h2 {
+    max-width: 1200px;
+
+    margin-bottom: 28px;
+
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.35;
+
+    color: #fff;
+
+    text-align: center;
+}
+
+/* ==========================
+        Description
+========================== */
+
+.kv-content p {
+
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, .9);
+
+    text-align: center;
+}
+
+.kv-content p span {
+    color: #2D9CFF;
+    font-weight: 700;
+}
+
+
+/* ======================================== */
