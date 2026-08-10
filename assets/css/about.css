@@ -196,3 +196,758 @@
 
 
 /* ======================================== */
+
+
+/* ========================================
+            STATS SECTION
+======================================== */
+
+.stats-sec {
+    width: 100%;
+    padding: 160px 0;
+}
+
+
+/* ========================================
+            STATS LIST
+======================================== */
+
+.stats-list {
+    width: 100%;
+    max-width: 1512px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/* ========================================
+            STATS ITEM
+======================================== */
+
+.stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 150px;
+}
+
+
+/* ========================================
+            LABEL
+======================================== */
+
+.stats-label {
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    font-weight: 400;
+
+    color: #111;
+
+    text-align: center;
+}
+
+
+/* ========================================
+            VALUE
+======================================== */
+
+.stats-value {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    white-space: nowrap;
+}
+
+
+/* ========================================
+            NUMBER
+======================================== */
+
+.stats-value .count-up {
+    font-size: 86px;
+    font-weight: 700;
+    color: #000;
+}
+
+
+/* ========================================
+            UNIT
+======================================== */
+
+.stats-unit,
+.stats-suffix {
+    margin-left: 5px;
+
+    font-size: 20px;
+    font-weight: 400;
+
+    color: #111;
+}
+
+
+/* ======================================== */
+
+
+.value-sec {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* ==========================
+        HERO IMAGE
+========================== */
+
+.value-hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.value-hero-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    will-change: width, height, transform, border-radius;
+}
+
+.value-hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ==========================
+        CONTENT
+========================== */
+
+.value-img-content {
+    padding: 150px 0 150px 200px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ==========================
+        LEFT
+========================== */
+
+.value-img-text-wrap {
+    width: 430px;
+    height: 587px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.value-img-text-wrap h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 100px;
+}
+
+.value-img-text-wrap h2 span {
+    color: #2D9CFF;
+}
+
+
+/* ==========================
+        TEXT CHANGE
+========================== */
+
+.value-text {
+    position: relative;
+    flex: 1;
+}
+
+.value-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(40px);
+
+    transition:
+        opacity .45s ease,
+        transform .45s ease,
+        visibility .45s;
+}
+
+.value-info.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.value-info h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 28px;
+}
+
+.value-info p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #666;
+}
+
+
+/* ==========================
+        PAGINATION
+========================== */
+
+.value-pagination {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.value-page-num {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.value-page-num span {
+    font-size: 20px;
+    color: #111;
+}
+
+.value-prev,
+.value-next {
+    border: none;
+    background: transparent;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.value-prev img,
+.value-next img {
+    width: 12px;
+    display: block;
+}
+
+
+/* ==========================
+        RIGHT
+========================== */
+
+.value-slider {
+    overflow: visible;
+}
+
+.value-track {
+    display: flex;
+    gap: 300px;
+    margin-left: 150px;
+
+    will-change: transform;
+}
+
+.value-card {
+    width: 587px;
+    height: 587px;
+
+    position: relative;
+
+    flex-shrink: 0;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    transition:
+        transform .45s ease,
+        opacity .45s ease;
+}
+
+.value-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.value-card.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.value-card:not(.active) {
+    opacity: .4;
+}
+
+
+/* ======================================== */
+
+
+/* ========================================
+            HISTORY SECTION
+======================================== */
+
+.history-sec {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    overflow: hidden;
+}
+
+
+/* ========================================
+            BACKGROUND
+======================================== */
+
+.history-bg {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 0;
+}
+
+.history-bg img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+}
+
+/* ========================================
+            TITLE
+======================================== */
+
+.history-title-wrap {
+    position: relative;
+
+    z-index: 3;
+
+    width: 100%;
+
+    padding-top: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history-title-wrap h2 {
+    margin: 0;
+
+    font-size: 48px;
+    font-weight: 700;
+
+    color: #fff;
+
+    text-align: center;
+}
+
+.title-line {
+    width: 100px;
+    height: 2px;
+
+    margin-top: 32px;
+
+    background: rgba(255, 255, 255);
+}
+
+
+/* ========================================
+            HISTORY WRAP
+======================================== */
+
+.history-wrap {
+    position: relative;
+
+    z-index: 3;
+
+    width: 100%;
+    max-width: 1512px;
+
+    margin: 200px auto 0;
+
+    padding-bottom: 200px;
+}
+
+
+/* ========================================
+            CENTER LINE
+======================================== */
+
+.history-line {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 1px;
+    height: 100%;
+
+    transform: translateX(-50%);
+
+    background: rgba(255, 255, 255);
+
+    z-index: 1;
+}
+
+
+/* ========================================
+            HISTORY DOT
+======================================== */
+
+.history-dot {
+    position: absolute;
+
+    left: 50%;
+
+    width: 7px;
+    height: 7px;
+
+    transform: translateX(-50%);
+
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+
+    background: #26313a;
+
+    box-sizing: border-box;
+}
+
+
+/*
+    각 연혁과 중앙 라인의 위치를 맞춤
+*/
+
+.history-dot:nth-child(1) {
+    top: 120px;
+}
+
+.history-dot:nth-child(2) {
+    top: 410px;
+}
+
+.history-dot:nth-child(3) {
+    top: 700px;
+}
+
+.history-dot:nth-child(4) {
+    top: 950px;
+}
+
+.history-dot:nth-child(5) {
+    top: 1200px;
+}
+
+
+/* ========================================
+            HISTORY ITEM
+======================================== */
+
+.history-item {
+    position: relative;
+
+    width: 50%;
+    height: 100%;
+    min-height: 142px;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+            RIGHT ITEM
+======================================== */
+
+.history-item-right {
+    margin-left: 50%;
+
+    padding-left: 160px;
+
+    text-align: left;
+}
+
+
+/* ========================================
+            LEFT ITEM
+======================================== */
+
+.history-item-left {
+    margin-left: 0;
+
+    padding-right: 160px;
+
+    text-align: right;
+}
+
+
+/* ========================================
+            HISTORY CONTENT
+======================================== */
+
+.history-content {
+    position: relative;
+
+    width: 100%;
+}
+
+
+/* ========================================
+            YEAR
+======================================== */
+
+.history-year {
+    display: block;
+
+    margin-bottom: 32px;
+
+    font-size: 48px;
+    font-weight: 700;
+
+    color: #fff;
+}
+
+
+/* ========================================
+            SUB TITLE
+======================================== */
+
+.history-content h3 {
+    margin-bottom: 32px;
+
+    font-size: 30px;
+    font-weight: 500;
+
+    color: #fff;
+}
+
+
+/* ========================================
+            DESCRIPTION
+======================================== */
+
+.history-content p {
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    color: rgba(255, 255, 255);
+}
+
+
+/* ========================================
+        LEFT / RIGHT CONTENT POSITION
+======================================== */
+
+.history-item-right .history-content {
+    text-align: left;
+}
+
+.history-item-left .history-content {
+    text-align: right;
+}
+
+
+/* ===================================================== */
+
+.cta {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+.cta-bg {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.cta-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+.cta-content {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.cta-text-wrap>h2 {
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.cta-text-wrap>p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #B8C4D6;
+}
+
+.cta-btn {
+    margin-top: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+
+    width: 200px;
+    height: 64px;
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.cta-btn:hover {
+    background: rgba(255, 255, 255, .08);
+}
+
+.cta-btn>span {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-btn>img {
+    width: 12px;
+    height: 16px;
+}
+
+
+/* ===================================================== */
+
+.footer {
+    width: 100%;
+    height: 240px;
+    background: #000;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.footer-logo {
+    flex-shrink: 0;
+}
+
+.footer-logo img {
+    width: 310px;
+    display: block;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-info p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1;
+}
+
+.footer-info span {
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #5C5C5C;
+    line-height: 1;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.footer-title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1;
+}
+
+.footer-number {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+}
+
+.footer-time {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    line-height: 1;
+}
