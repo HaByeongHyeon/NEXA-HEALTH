@@ -335,6 +335,11 @@
     max-height: 200px;
 }
 
+.img-sec img {
+    width: 100%;
+    max-width: 1920px;
+}
+
 
 /* =========================
         MISSION SECTION
@@ -706,7 +711,7 @@
 ========================= */
 
 .vision-sec video {
-    width: 1920px;
+    width: 100%;
     height: 750px;
 
     margin-top: auto;
@@ -716,4 +721,338 @@
     object-fit: cover;
 
     display: block;
+}
+
+
+/* ======================================== */
+
+.cta {
+    position: relative;
+
+    width: 100%;
+    height: 650px;
+
+    display: flex;
+    flex-direction: row;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+.cta-wrap {
+    position: relative;
+
+    width: 50%;
+    height: 650px;
+
+    flex: 0 0 50%;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+        BACKGROUND IMAGE
+========================= */
+
+.cta-bg {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    z-index: 0;
+
+    transition: transform .6s ease;
+}
+
+
+/* =========================
+        OVERLAY
+========================= */
+
+.cta-overlay {
+    display: block;
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0);
+
+    z-index: 1;
+
+    transition: background .5s ease;
+
+    pointer-events: none;
+}
+
+
+/* =========================
+        CONTENT
+========================= */
+
+.cta-content {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    padding: 0 30px 100px;
+
+    box-sizing: border-box;
+
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/* =========================
+        TEXT
+========================= */
+
+.cta-text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 25px;
+
+    text-align: left;
+}
+
+
+/* =========================
+        TITLE
+========================= */
+
+.cta-text-wrap>h2 {
+    margin: 0;
+
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.15;
+
+    color: #fff;
+
+    transform: translateY(200px);
+
+    transition:
+        transform .5s ease;
+}
+
+
+/* =========================
+        DESCRIPTION
+========================= */
+
+.cta-text-wrap>p {
+    display: block;
+
+    margin: 0;
+
+    font-size: 24px;
+    font-weight: 500;
+
+    line-height: 1.4;
+
+    color: #B8C4D6;
+
+    opacity: 0;
+
+    transform: translateY(20px);
+
+    transition:
+        opacity .5s ease,
+        transform .5s ease;
+}
+
+
+/* =========================
+        BUTTON
+========================= */
+
+.cta-btn {
+    display: flex;
+
+    margin-top: 45px;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 18px;
+
+    width: 200px;
+    height: 64px;
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    transform: translateY(20px);
+
+    transition:
+        opacity .5s ease,
+        transform .5s ease,
+        background .3s ease;
+}
+
+
+/* =========================
+        BUTTON TEXT
+========================= */
+
+.cta-btn>span {
+    font-size: 20px;
+    font-weight: 400;
+
+    color: #fff;
+
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+        BUTTON ARROW
+========================= */
+
+.cta-btn>img {
+    width: 12px;
+    height: 16px;
+}
+
+
+/* =========================
+        HOVER
+========================= */
+
+.cta-wrap:hover .cta-overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.cta-wrap:hover .cta-text-wrap>h2 {
+    transform: translateY(0);
+}
+
+.cta-wrap:hover .cta-text-wrap>p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cta-wrap:hover .cta-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* 버튼 hover */
+.cta-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* ======================================== */
+.footer {
+    width: 100%;
+    height: 240px;
+    background: #000;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.footer-logo {
+    flex-shrink: 0;
+}
+
+.footer-logo img {
+    width: 310px;
+    display: block;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-info p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1;
+}
+
+.footer-info span {
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #5C5C5C;
+    line-height: 1;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.footer-title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1;
+}
+
+.footer-number {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+}
+
+.footer-time {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    line-height: 1;
 }
