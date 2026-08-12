@@ -1,0 +1,52 @@
+@media (max-width: 767px) {
+
+    .header {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        height: clamp(70px, calc(70px + (100vw - 430px) * 0.0625), 90px);
+
+        padding: 0 clamp(20px, 5vw, 36px);
+
+        box-sizing: border-box;
+    }
+
+    /* =========================
+            LOGO
+    ========================= */
+
+    .logo {
+        min-width: 0;
+        max-width: calc(100% - 60px);
+    }
+
+    .logo a {
+        max-width: 100%;
+    }
+
+    .logo img {
+        width: clamp(180px, calc(180px + (100vw - 430px) * 0.15625), 233px);
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* =========================
+            MENU
+    ========================= */
+
+    .menu-list {
+        display: none;
+    }
+
+    /* =========================
+        HAMBURGER
+    ========================= */
+
+    .hamburger-menu {
+        display: block;
+        flex: 0 0 auto;
+        width: clamp(28px, 7vw, 40px);
+        height: clamp(28px, 7vw, 40px);
+        cursor: pointer;
+    }
+}
