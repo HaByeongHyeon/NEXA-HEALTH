@@ -45,8 +45,8 @@
     .hamburger-menu {
         display: block;
         flex: 0 0 auto;
-        width: clamp(28px, 7vw, 40px);
-        height: clamp(28px, 7vw, 40px);
+        width: clamp(24px, 7vw, 40px);
+        height: clamp(24px, 7vw, 40px);
         cursor: pointer;
     }
 }
