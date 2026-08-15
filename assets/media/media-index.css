@@ -1,5 +1,9 @@
 @media (max-width: 1024px) {
 
+    /* =========================
+            HEADER
+    ========================= */
+
     .header {
         justify-content: space-between;
     }
@@ -26,61 +30,67 @@
     }
 
 
-    /* ======================================== */
+    /* ========================================
+            HERO 01
+    ======================================== */
+
+    /* ========================================
+        HERO 01
+======================================== */
 
     .kv-sec {
         height: 1366px;
     }
 
     .kv-desc {
-        font-size: 24px;
+        font-size: clamp(18px, 2.34vw, 24px);
     }
 
     .kv-title {
-        font-size: 60px;
+        font-size: clamp(48px, calc(4.67vw + 12.2px), 60px);
     }
 
 
-    /* ======================================== */
+    /* ========================================
+        HERO 02
+======================================== */
 
     .kv-2-sec {
         height: 1366px;
     }
 
     .kv-2-desc {
-        font-size: 24px;
+        font-size: clamp(18px, 2.34vw, 24px);
     }
 
     .kv-2-title {
-        font-size: 60px;
+        font-size: clamp(48px, calc(4.67vw + 12.2px), 60px);
     }
 
 
-    /* ======================================== */
+    /* ========================================
+        HERO 03
+======================================== */
 
     .kv-3-sec {
         height: 1366px;
     }
 
     .kv-3-desc {
-        font-size: 24px;
+        font-size: clamp(18px, 2.34vw, 24px);
     }
 
     .kv-3-title {
-        font-size: 60px;
+        font-size: clamp(48px, calc(4.67vw + 12.2px), 60px);
     }
 
 
-    /* ======================================== */
-
+    /* ========================================
+            PHILOSOPHY
+    ======================================== */
 
     .philosophy-text-wrap {
-        margin-bottom: 100px;
-    }
-
-    .philosophy-card-wrap {
-        display: flex;
-        flex-direction: column;
+        margin-bottom: clamp(70px, 9.77vw, 100px);
     }
 
     .philosophy-card-wrap {
@@ -96,24 +106,22 @@
 
     .philosophy-card {
         width: 100%;
-        height: 400px !important;
-        min-height: 400px !important;
-        max-height: 400px !important;
+        height: clamp(400px, 39.06vw, 400px) !important;
+        min-height: clamp(400px, 39.06vw, 400px) !important;
+        max-height: clamp(400px, 39.06vw, 400px) !important;
 
-        flex: 0 0 400px !important;
+        flex: 0 0 clamp(400px, 39.06vw, 400px) !important;
 
         overflow: hidden;
         cursor: default;
     }
 
-    /* 카드 확대 상태를 기본값으로 */
     .philosophy-card-wrap:hover .philosophy-card,
     .philosophy-card-wrap:hover .philosophy-card:hover,
     .philosophy-card:hover {
-        flex: 0 0 400px !important;
+        flex: 0 0 clamp(400px, 39.06vw, 400px) !important;
     }
 
-    /* 이미지 확대 상태를 기본값으로 */
     .philosophy-card img,
     .philosophy-card:hover img {
         width: 100%;
@@ -125,23 +133,20 @@
         transition: none !important;
     }
 
-    /* 어두워진 after 상태를 기본값으로 */
     .philosophy-card::after,
     .philosophy-card:hover::after {
         background: rgba(0, 0, 0, 0.55) !important;
         transition: none !important;
     }
 
-    /* 확대된 제목 상태를 기본값으로 */
     .philosophy-card .card-title,
     .philosophy-card:hover .card-title {
-        font-size: 48px !important;
+        font-size: clamp(40px, calc(3.11vw + 16.17px), 48px) !important;
         transform: translateY(0) !important;
 
         transition: none !important;
     }
 
-    /* 표시된 구분선 상태를 기본값으로 */
     .philosophy-card .line,
     .philosophy-card:hover .line {
         opacity: 1 !important;
@@ -151,7 +156,6 @@
         transition: none !important;
     }
 
-    /* 표시된 설명 상태를 기본값으로 */
     .philosophy-card .card-desc,
     .philosophy-card:hover .card-desc {
         opacity: 1 !important;
@@ -163,19 +167,17 @@
     }
 
 
-    /* ======================================== */
+    /* ========================================
+            MISSION
+    ======================================== */
 
     .img-sec img {
-        height: 1366px;
+        height: clamp(1024px, calc(13.3vw + 1002px), 1366px);
     }
 
-    /* =========================
-            LEFT
-    ========================= */
-
     .mission-content {
-        margin-top: 100px;
-        padding: 0 25px;
+        margin-top: clamp(100px, 9.77vw, 100px);
+        padding: 0 clamp(20px, 2.44vw, 25px);
 
         display: flex;
         justify-content: space-between;
@@ -185,42 +187,38 @@
     .mission-text-wrap {
         position: relative;
 
-        width: 360px;
-        height: 386px;
+        width: clamp(360px, 35.16vw, 360px);
+        height: clamp(386px, 37.7vw, 386px);
 
         flex-shrink: 0;
     }
 
     .mission-text {
-        width: 360px;
+        width: 100%;
     }
 
     .mission-title {
-        font-size: 40px;
+        font-size: clamp(40px, 5.21vw, 40px);
         margin-bottom: 40px;
 
         white-space: nowrap;
     }
 
     .mission-sub-title {
-        font-size: 24px;
+        font-size: clamp(24px, 3.13vw, 24px);
         margin-bottom: 30px;
     }
 
     .mission-desc {
-        width: 360px;
+        width: 100%;
 
-        font-size: 18px;
+        font-size: clamp(18px, 2.34vw, 18px);
         line-height: 1.5;
 
         margin-bottom: 0;
 
         word-break: keep-all;
     }
-
-    /* =========================
-            PAGINATION
-    ========================= */
 
     .mission-pagination {
         position: absolute;
@@ -234,13 +232,9 @@
         gap: 30px;
     }
 
-    /* =========================
-            RIGHT
-    ========================= */
-
     .mission-slider {
-        width: 480px;
-        height: 480px;
+        width: clamp(337px, 46.88vw, 480px);
+        height: clamp(337px, 46.88vw, 480px);
 
         flex-shrink: 0;
 
@@ -251,18 +245,17 @@
         display: flex;
 
         gap: 0;
-
         margin-left: 0;
 
         width: max-content;
-        height: 480px;
+        height: clamp(337px, 46.88vw, 480px);
     }
 
     .mission-card {
-        width: 480px;
-        height: 480px;
+        width: clamp(337px, 46.88vw, 480px);
+        height: clamp(337px, 46.88vw, 480px);
 
-        flex: 0 0 480px;
+        flex: 0 0 clamp(337px, 46.88vw, 480px);
 
         border-radius: 40px;
     }
@@ -275,35 +268,42 @@
     }
 
 
-    /* ======================================== */
+    /* ========================================
+            NEWS
+    ======================================== */
 
     .news-container {
-        padding: 70px 24px;
+        padding: clamp(50px, 6.84vw, 70px) clamp(20px, 2.34vw, 24px);
     }
 
     .news-title {
-        margin-bottom: 38px;
+        margin-bottom: clamp(38px, 4.94vw, 50px);
+        align-items: center;
     }
 
     .news-title>h2 {
-        font-size: 40px;
+        font-size: clamp(36px, 3.91vw, 40px);
     }
 
-    .news-title>button {
-        font-size: 18px;
+    .news-title>button,
+    .news-title>p {
+        font-size: clamp(16px, 1.76vw, 18px);
     }
 
     .news-card-wrap {
         display: grid;
-        grid-template-columns: repeat(2, 468px);
-        gap: 20px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: clamp(14px, 1.95vw, 20px);
 
+        width: 100%;
         justify-content: center;
     }
 
     .news-card {
-        width: 468px;
-        height: 484px;
+        width: 100%;
+        height: auto;
+
+        min-height: clamp(430px, 47.27vw, 484px);
 
         border-radius: 10px;
         background: #E5E5E5;
@@ -315,45 +315,63 @@
 
     .news-card>img {
         width: 100%;
-        height: 326px;
+        height: clamp(250px, 31.84vw, 326px);
 
         object-fit: cover;
         display: block;
     }
 
     .news-card-text {
-        padding: 32px 16px 0;
+        padding: clamp(24px, 3.13vw, 32px) clamp(12px, 1.56vw, 16px) 0;
     }
 
     .news-card-text>h3 {
-        font-size: 22px;
+        font-size: clamp(16px, 2.15vw, 22px);
         font-weight: 500;
 
-        margin-bottom: 20px;
+        margin-bottom: clamp(16px, 1.95vw, 20px);
 
         line-height: 1.35;
     }
 
     .news-card-text>p {
-        font-size: 16px;
+        font-size: clamp(14px, 1.56vw, 16px);
         font-weight: 300;
 
         color: #5C5C5C;
     }
 
 
-    /* ======================================== */
+    /* ========================================
+            VISION
+    ======================================== */
 
-    .vision-title-wrap h2 {
-        font-size: 40px;
+    .vision-title-wrap>h2 {
+        font-size: clamp(36px, 3.91vw, 40px);
     }
 
-    .vision-title-wrap p {
-        font-size: 20px;
+    .vision-title-wrap>p {
+        font-size: clamp(18px, 1.95vw, 20px);
+    }
+
+    .vision-sec {
+        height: auto;
+    }
+
+    .vision-sec video {
+        width: 100%;
+        height: clamp(300px, calc(734px - 42.4vw), 409px);
+
+        margin: 0;
+
+        object-fit: cover;
+        display: block;
     }
 
 
-    /* ======================================== */
+    /* ========================================
+            CTA
+    ======================================== */
 
     .cta {
         width: 100%;
@@ -374,11 +392,6 @@
         overflow: hidden;
     }
 
-
-    /* =========================
-            CONTENT
-    ========================= */
-
     .cta-content {
         left: 0;
         bottom: 50%;
@@ -396,11 +409,6 @@
         text-align: center;
     }
 
-
-    /* =========================
-            TEXT
-    ========================= */
-
     .cta-text-wrap {
         align-items: center;
 
@@ -409,19 +417,9 @@
         text-align: center;
     }
 
-
-    /* =========================
-            TITLE
-    ========================= */
-
     .cta-text-wrap>h2 {
         transform: translateY(0);
     }
-
-
-    /* =========================
-            DESCRIPTION
-    ========================= */
 
     .cta-text-wrap>p {
         opacity: 1;
@@ -429,30 +427,15 @@
         transform: translateY(0);
     }
 
-
-    /* =========================
-            BUTTON
-    ========================= */
-
     .cta-btn {
         opacity: 1;
 
         transform: translateY(0);
     }
 
-
-    /* =========================
-            OVERLAY
-    ========================= */
-
     .cta-overlay {
         background: rgba(0, 0, 0, 0.6);
     }
-
-
-    /* =========================
-            HOVER DISABLE
-    ========================= */
 
     .cta-wrap:hover .cta-overlay {
         background: rgba(0, 0, 0, 0.6);
@@ -473,13 +456,15 @@
     }
 
 
-    /* ======================================== */
+    /* ========================================
+            FOOTER
+    ======================================== */
 
     .footer {
         width: 100%;
-        height: 240px;
+        height: clamp(160px, calc(31.13vw - 78.55px), 240px);
 
-        padding: 0 30px;
+        padding: 0 clamp(20px, 2.93vw, 30px);
 
         box-sizing: border-box;
     }
@@ -489,40 +474,488 @@
     }
 
     .footer-left {
-        gap: 33px;
+        gap: clamp(20px, 3.22vw, 33px);
     }
 
     .footer-logo img {
-        width: 245px;
+        width: clamp(215px, 23.93vw, 245px);
     }
 
     .footer-info {
-        gap: 20px;
+        gap: clamp(5px, 1.95vw, 20px);
     }
 
     .footer-info p {
-        font-size: 16px;
+        font-size: clamp(14px, 1.56vw, 16px);
     }
 
     .footer-info span {
-        font-size: 12px;
+        font-size: clamp(11px, 1.17vw, 12px);
     }
 
     .footer-right {
-        gap: 8px;
+        gap: clamp(8px, calc(95.65px - 8.56vw), 30px);
     }
 
     .footer-title {
-        font-size: 14px;
+        font-size: clamp(14px, 1.56vw, 16px);
     }
 
     .footer-number {
-        font-size: 48px;
+        font-size: clamp(36px, calc(4.67vw + 0.17px), 48px);
     }
 
     .footer-time {
-        font-size: 12px;
+        font-size: clamp(12px, 1.17vw, 12px);
     }
+
+}
+
+
+
+
+@media (max-width: 767px) {
+
+    /* =========================
+        HERO SECTION 01
+    ========================= */
+
+    .kv-sec {
+        height: 100vh;
+        min-height: 1024px;
+    }
+
+    .kv-sec img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .kv-text-wrap {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .kv-desc {
+        margin-bottom: 20px;
+
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .kv-title {
+        font-size: clamp(40px, 11vw, 48px);
+        line-height: 1.2;
+
+        word-break: keep-all;
+    }
+
+
+    /* =========================
+        HERO SECTION 02
+    ========================= */
+
+    .kv-2-sec {
+        height: 100svh;
+        min-height: 1024px;
+    }
+
+    .kv-2-sec img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .kv-2-text-wrap {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .kv-2-desc {
+        margin-bottom: 20px;
+
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .kv-2-title {
+        font-size: clamp(40px, 11vw, 48px);
+        line-height: 1.2;
+
+        word-break: keep-all;
+    }
+
+
+    /* =========================
+        HERO SECTION 03
+    ========================= */
+
+    .kv-3-sec {
+        height: 100svh;
+        min-height: 1024px;
+    }
+
+    .kv-3-sec img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .kv-3-text-wrap {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .kv-3-desc {
+        margin-bottom: 20px;
+
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .kv-3-title {
+        font-size: clamp(40px, 11vw, 48px);
+        line-height: 1.2;
+
+        word-break: keep-all;
+    }
+
+    .philosophy-text-wrap {
+        padding: 0 30px;
+    }
+
+    .philosophy-title {
+        font-size: 48px;
+    }
+
+    .philosophy-desc {
+        font-size: 20px;
+    }
+
+    .philosophy-card .card-title,
+    .philosophy-card:hover .card-title {
+        font-size: 40px !important;
+        transform: translateY(0) !important;
+
+        transition: none !important;
+    }
+
+    .card-desc {
+        font-size: 20px;
+    }
+
+
+    .mission-content {
+        position: relative;
+
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    /* =========================
+            TEXT
+    ========================= */
+
+    .mission-text-wrap {
+        position: static;
+
+        width: 100%;
+        height: auto;
+
+        margin-top: 40px;
+
+        text-align: center;
+    }
+
+    .mission-text:not(.active) {
+        display: none;
+    }
+
+    .mission-text {
+        position: relative;
+
+        width: 100%;
+    }
+
+    .mission-title {
+        font-size: 32px;
+
+        margin-bottom: 20px;
+
+        white-space: nowrap;
+    }
+
+    .mission-sub-title {
+        font-size: 18px;
+
+        margin-bottom: 40px;
+    }
+
+    .mission-desc {
+        width: 100%;
+
+        font-size: 18px;
+        line-height: 1.5;
+
+        margin-bottom: 0;
+
+        word-break: keep-all;
+    }
+
+
+    /* =========================
+            SLIDER
+    ========================= */
+
+    .mission-slider {
+        width: 337px;
+        height: 337px;
+
+        flex-shrink: 0;
+
+        overflow: hidden;
+    }
+
+    .mission-track {
+        display: flex;
+
+        gap: 0;
+
+        margin-left: 0;
+
+        width: max-content;
+        height: 337px;
+    }
+
+    .mission-card {
+        width: 337px;
+        height: 337px;
+
+        flex: 0 0 337px;
+
+        border-radius: 40px;
+    }
+
+    .mission-card img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    /* =========================
+            PAGINATION
+    ========================= */
+
+    .mission-pagination {
+        position: absolute;
+
+        top: 147.5px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 100%;
+        max-width: 688px;
+        height: 42px;
+
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        z-index: 10;
+    }
+
+    .mission-page-num {
+        display: none;
+    }
+
+    .mission-prev-btn,
+    .mission-next-btn {
+        width: 42px;
+        height: 42px;
+
+        border: none;
+        border-radius: 50%;
+
+        padding: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #B3B3B3;
+
+        cursor: pointer;
+    }
+
+    .mission-prev-btn img,
+    .mission-next-btn img {
+        width: 10px;
+        height: 16px;
+
+        display: block;
+
+        filter: invert(1);
+    }
+
+
+    .news-container {
+        padding: 0 20px 50px;
+    }
+
+
+    /* =========================
+            TITLE
+    ========================= */
+
+    .news-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        margin-bottom: 50px;
+    }
+
+    .news-title>h2 {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .news-title>p {
+        font-size: 16px;
+    }
+
+
+    /* =========================
+            CARD
+    ========================= */
+
+    .news-card-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+
+        width: 100%;
+    }
+
+    .news-card {
+        width: 100%;
+        height: auto;
+
+        border-radius: 10px;
+        overflow: hidden;
+
+        background: #E5E5E5;
+    }
+
+    .news-card:nth-child(n+3) {
+        display: none;
+    }
+
+
+    /* =========================
+            IMAGE
+    ========================= */
+
+    .news-card>img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 285 / 200;
+
+        object-fit: cover;
+        display: block;
+    }
+
+
+    /* =========================
+            TEXT
+    ========================= */
+
+    .news-card-text {
+        padding: 20px 10px 14px;
+    }
+
+    .news-card-text>h3 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.35;
+
+        margin-bottom: 14px;
+    }
+
+    .news-card-text>p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.5;
+
+        color: #5C5C5C;
+    }
+
+
+    .vision-title-wrap>h2 {
+        font-size: 36px;
+    }
+
+    .vision-title-wrap>p {
+        font-size: 18px;
+    }
+
+    .vision-sec {
+        height: auto;
+        padding: 50px 0 0;
+    }
+
+    .vision-sec video {
+        width: 100%;
+        height: 409px;
+        margin: 0;
+
+        object-fit: cover;
+        display: block;
+    }
+
+
+    .partner-sec {
+        height: 200px;
+    }
+
+
+    .footer {
+        height: 160px;
+    }
+
+
+    .footer-info {
+        display: none;
+    }
+
+    .footer-right {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer-title {
+        font-size: 16px;
+    }
+
+    .footer-number {
+        font-size: 36px;
+    }
+
+    .footer-time {
+        display: none;
+    }
+
 
 
 
