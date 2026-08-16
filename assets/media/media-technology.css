@@ -1,0 +1,32 @@
+@media (max-width: 1024px) {
+
+    /* =========================
+            HEADER
+    ========================= */
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .logo {
+        flex: 0 0 auto;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex: 0 0 auto;
+        margin-left: auto;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+}

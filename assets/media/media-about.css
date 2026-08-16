@@ -1,0 +1,868 @@
+@media (max-width: 1024px) {
+
+    /* =========================
+            HEADER
+    ========================= */
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .logo {
+        flex: 0 0 auto;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex: 0 0 auto;
+        margin-left: auto;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .kv-sec>h2 {
+        font-size: 48px;
+    }
+
+    .kv-content>h2 {
+        font-size: 42px;
+    }
+
+    .kv-content>p {
+        font-size: 20px;
+    }
+
+
+    .stats-sec {
+        width: 100%;
+        padding: 100px 0;
+    }
+
+
+
+
+
+    /* ========================================
+            UNIT
+    ======================================== */
+
+    .stats-unit,
+    .stats-suffix {
+        margin-left: 5px;
+
+        font-size: 20px;
+        font-weight: 400;
+
+        color: #111;
+    }
+
+
+    .value-hero {
+        width: 100%;
+    }
+
+    .value-img-content {
+        padding: 100px 25px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    /* ==========================
+            LEFT
+    ========================== */
+
+    .value-img-text-wrap {
+        width: 360px;
+        height: 386px;
+
+        flex-shrink: 0;
+    }
+
+    .value-img-text-wrap h2 {
+        font-size: 40px;
+        margin-bottom: 60px;
+    }
+
+
+    /* ==========================
+            TEXT CHANGE
+    ========================== */
+
+    .value-info h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .value-info p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+
+    /* ==========================
+            PAGINATION
+    ========================== */
+
+    .value-pagination {
+        gap: 30px;
+    }
+
+    .value-page-num span {
+        font-size: 18px;
+    }
+
+    .value-prev img,
+    .value-next img {
+        width: 10px;
+    }
+
+
+    /* ==========================
+            RIGHT
+    ========================== */
+
+    .value-slider {
+        width: 480px;
+        height: 480px;
+
+        flex-shrink: 0;
+
+        overflow: hidden;
+    }
+
+    .value-track {
+        display: flex;
+
+        gap: 0;
+        margin-left: 0;
+
+        width: max-content;
+        height: 480px;
+    }
+
+    .value-card {
+        width: 480px;
+        height: 480px;
+
+        flex: 0 0 480px;
+
+        border-radius: 40px;
+    }
+
+    .value-card img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    /* ========================================
+            HISTORY SECTION
+    ======================================== */
+
+    .history-sec {
+        position: relative;
+
+        width: 100%;
+        min-height: 100vh;
+
+        overflow: hidden;
+    }
+
+
+    /* ========================================
+            BACKGROUND
+    ======================================== */
+
+    .history-bg {
+        position: absolute;
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        z-index: 0;
+    }
+
+    .history-bg img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+
+        display: block;
+    }
+
+
+    /* ========================================
+            TITLE
+    ======================================== */
+
+    .history-title-wrap {
+        position: relative;
+
+        z-index: 3;
+
+        width: 100%;
+
+        padding-top: 200px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .history-title-wrap h2 {
+        margin: 0;
+
+        font-size: 48px;
+        font-weight: 700;
+
+        color: #fff;
+
+        text-align: center;
+    }
+
+    .title-line {
+        width: 100px;
+        height: 1px;
+
+        margin-top: 32px;
+
+        background: rgba(255, 255, 255, 1);
+    }
+
+
+    /* ========================================
+            HISTORY WRAP
+    ======================================== */
+
+    .history-wrap {
+        position: relative;
+
+        z-index: 3;
+
+        width: 100%;
+        max-width: 806px;
+
+        margin: 107px auto 0;
+
+        padding-bottom: 107px;
+    }
+
+
+    /* ========================================
+            CENTER LINE
+    ======================================== */
+
+    .history-line {
+        position: absolute;
+
+        top: 0;
+        left: 50%;
+
+        width: 1px;
+        height: 100%;
+
+        transform: translateX(-50%);
+
+        background: rgba(255, 255, 255, 1);
+
+        z-index: 1;
+    }
+
+
+    /* ========================================
+            HISTORY DOT
+    ======================================== */
+
+    .history-dot {
+        position: absolute;
+
+        left: 50%;
+
+        width: 4px;
+        height: 4px;
+
+        transform: translateX(-50%);
+
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        border-radius: 50%;
+
+        background: #26313a;
+
+        box-sizing: border-box;
+    }
+
+    .history-dot:nth-child(1) {
+        top: 64px;
+    }
+
+    .history-dot:nth-child(2) {
+        top: 219px;
+    }
+
+    .history-dot:nth-child(3) {
+        top: 373px;
+    }
+
+    .history-dot:nth-child(4) {
+        top: 507px;
+    }
+
+    .history-dot:nth-child(5) {
+        top: 640px;
+    }
+
+
+    /* ========================================
+            HISTORY ITEM
+    ======================================== */
+
+    .history-item {
+        position: relative;
+
+        width: 50%;
+        height: 100%;
+        min-height: 76px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* ========================================
+            RIGHT ITEM
+    ======================================== */
+
+    .history-item-right {
+        margin-left: 50%;
+
+        padding-left: 85px;
+
+        text-align: left;
+    }
+
+
+    /* ========================================
+            LEFT ITEM
+    ======================================== */
+
+    .history-item-left {
+        margin-left: 0;
+
+        padding-right: 85px;
+
+        text-align: right;
+    }
+
+
+    /* ========================================
+            HISTORY CONTENT
+    ======================================== */
+
+    .history-content {
+        position: relative;
+
+        width: 100%;
+    }
+
+
+    /* ========================================
+            YEAR
+    ======================================== */
+
+    .history-year {
+        display: block;
+
+        margin-bottom: 17px;
+
+        font-size: 26px;
+        font-weight: 700;
+
+        color: #fff;
+    }
+
+
+    /* ========================================
+            SUB TITLE
+    ======================================== */
+
+    .history-content h3 {
+        margin-bottom: 17px;
+
+        font-size: 16px;
+        font-weight: 500;
+
+        color: #fff;
+    }
+
+
+    /* ========================================
+            DESCRIPTION
+    ======================================== */
+
+    .history-content p {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 1.5;
+
+        color: rgba(255, 255, 255);
+    }
+
+
+    /* ========================================
+        LEFT / RIGHT CONTENT POSITION
+    ======================================== */
+
+    .history-item-right .history-content {
+        text-align: left;
+    }
+
+    .history-item-left .history-content {
+        text-align: right;
+    }
+
+
+
+
+
+    /* =========================
+            FOOTER
+    ========================= */
+
+    .footer {
+        width: 100%;
+        height: clamp(160px, calc(31.13vw - 78.55px), 240px);
+
+        padding: 0 clamp(20px, 2.93vw, 30px);
+
+        box-sizing: border-box;
+    }
+
+    .footer-content {
+        width: 100%;
+    }
+
+    .footer-left {
+        gap: clamp(20px, 3.22vw, 33px);
+    }
+
+    .footer-logo img {
+        width: clamp(215px, 23.93vw, 245px);
+    }
+
+    .footer-info {
+        gap: clamp(5px, 1.95vw, 20px);
+    }
+
+    .footer-info p {
+        font-size: clamp(14px, 1.56vw, 16px);
+    }
+
+    .footer-info span {
+        font-size: clamp(11px, 1.17vw, 12px);
+    }
+
+    .footer-right {
+        gap: clamp(8px, calc(95.65px - 8.56vw), 30px);
+    }
+
+    .footer-title {
+        font-size: clamp(14px, 1.56vw, 16px);
+    }
+
+    .footer-number {
+        font-size: clamp(36px, calc(4.67vw + 0.17px), 48px);
+    }
+
+    .footer-time {
+        font-size: clamp(12px, 1.17vw, 12px);
+    }
+}
+
+
+
+@media (max-width: 767px) {
+
+    .kv-img-wrap {
+        width: 688px;
+        height: 338px;
+    }
+
+
+    /* ========================================
+            STATS LIST
+    ======================================== */
+
+    .stats-list {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+
+        column-gap: 20px;
+        row-gap: 50px;
+    }
+
+
+    /* ========================================
+            STATS ITEM
+    ======================================== */
+
+    .stats-item {
+        width: 200px;
+        min-width: 200px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* ========================================
+            LABEL
+    ======================================== */
+
+    .stats-label {
+        margin-bottom: 20px;
+
+        font-size: 20px;
+        font-weight: 400;
+
+        color: #111;
+
+        text-align: center;
+    }
+
+
+    /* ========================================
+            VALUE
+    ======================================== */
+
+    .stats-value {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+
+        white-space: nowrap;
+    }
+
+
+    /* ========================================
+            NUMBER
+    ======================================== */
+
+    .stats-value .count-up {
+        font-size: 60px;
+        font-weight: 700;
+        color: #000;
+    }
+
+
+
+    .value-img-content {
+        position: relative;
+
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    /* =========================
+            TEXT
+    ========================= */
+
+    .value-img-text-wrap {
+        position: static;
+
+        width: 100%;
+        height: auto;
+
+        margin-top: 40px;
+
+        text-align: center;
+    }
+
+    .value-text:not(.active) {
+        display: none;
+    }
+
+    .value-text {
+        position: relative;
+
+        width: 100%;
+    }
+
+    .value-info h3 {
+        font-size: 32px;
+
+        margin-bottom: 20px;
+
+        white-space: nowrap;
+    }
+
+    .value-info p {
+        width: 100%;
+
+        font-size: 18px;
+        line-height: 1.5;
+
+        margin-bottom: 0;
+
+        word-break: keep-all;
+    }
+
+
+    /* =========================
+            SLIDER
+    ========================= */
+
+    .value-slider {
+        width: 337px;
+        height: 337px;
+
+        flex-shrink: 0;
+
+        overflow: hidden;
+    }
+
+    .value-track {
+        display: flex;
+
+        gap: 0;
+
+        margin-left: 0;
+
+        width: max-content;
+        height: 337px;
+    }
+
+    .value-card {
+        width: 337px;
+        height: 337px;
+
+        flex: 0 0 337px;
+
+        border-radius: 40px;
+    }
+
+    .value-card img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    /* =========================
+            PAGINATION
+    ========================= */
+
+    .value-pagination {
+        position: absolute;
+
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 100%;
+        max-width: 688px;
+        height: 42px;
+
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        z-index: 10;
+    }
+
+    .value-page-num {
+        display: none;
+    }
+
+    .value-prev,
+    .value-next {
+        width: 42px;
+        height: 42px;
+
+        border: none;
+        border-radius: 50%;
+
+        padding: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #B3B3B3;
+
+        cursor: pointer;
+    }
+
+    .value-prev img,
+    .value-next img {
+        width: 10px;
+        height: 16px;
+
+        display: block;
+
+        filter: invert(1);
+    }
+
+
+    .cta {
+        position: relative;
+
+        width: 100%;
+        height: 320px;
+
+        overflow: hidden;
+    }
+
+    .cta-bg {
+        width: 100%;
+        height: 320px;
+
+        object-fit: cover;
+        display: block;
+    }
+
+    .cta-overlay {
+        position: absolute;
+        inset: 0;
+
+        background: rgba(0, 0, 0, 0.45);
+
+        z-index: 1;
+    }
+
+    .cta-content {
+        position: absolute;
+        inset: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0 20px;
+
+        box-sizing: border-box;
+    }
+
+    .cta-text-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+
+        gap: 20px;
+    }
+
+    .cta-text-wrap>h2 {
+        font-size: 32px;
+        font-weight: 500;
+
+        line-height: 1.2;
+
+        color: #fff;
+    }
+
+    .cta-text-wrap>p {
+        font-size: 16px;
+        font-weight: 500;
+
+        line-height: 1.5;
+
+        color: #B8C4D6;
+    }
+
+    .cta-btn {
+        margin-top: 25px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 18px;
+
+        width: 170px;
+        height: 56px;
+
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 12px;
+
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .cta-btn>span {
+        font-size: 18px;
+        font-weight: 400;
+
+        color: #fff;
+
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .cta-btn>img {
+        width: 12px;
+        height: 16px;
+    }
+
+
+
+    .footer {
+        height: 160px;
+    }
+
+
+    .footer-info {
+        display: none;
+    }
+
+    .footer-right {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer-title {
+        font-size: 16px;
+    }
+
+    .footer-number {
+        font-size: 36px;
+    }
+
+    .footer-time {
+        display: none;
+    }
+
+
+}
