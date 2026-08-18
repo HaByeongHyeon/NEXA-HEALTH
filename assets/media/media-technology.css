@@ -29,4 +29,71 @@
         display: block;
     }
 
+
+    .kv-text-wrap {
+        font-size: 54px;
+    }
+
+    .kv-img-wrap {
+        width: 712px;
+        height: 352px;
+    }
+
+
+    .kv-2-title-wrap {
+        gap: 30px;
+    }
+
+    .kv-2-title-wrap>h2 {
+        font-size: 32px;
+    }
+
+    .kv-2-title-wrap>p {
+        font-size: 20px;
+    }
+
+
+    .step-sec {
+        padding: 100px 32px;
+    }
+
+    .step-title-wrap {
+        text-align: center;
+
+        white-space: nowrap;
+    }
+
+    .step-title-wrap h2 {
+        font-size: 40px;
+    }
+
+    .step-title-wrap p {
+        font-size: 20px;
+    }
+
+    .step-img-wrap {
+        width: 345px;
+        height: 345px;
+    }
+
+    .step-list-wrap {
+        width: 552px;
+        height: 437px;
+    }
+
+    .step-item {
+        /* height: 437px; */
+
+        gap: 100px;
+    }
+
+    .step-number {
+        width: 40px;
+        height: 40px;
+    }
+
+    .step-text h3 {
+        font-size: 28px;
+    }
+
 }
