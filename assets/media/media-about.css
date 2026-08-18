@@ -241,8 +241,6 @@
         width: 100px;
         height: 1px;
 
-        margin-top: 32px;
-
         background: rgba(255, 255, 255, 1);
     }
 
@@ -507,6 +505,10 @@
     /* ========================================
             STATS LIST
     ======================================== */
+
+    .stats-sec {
+        padding: 100px 32px;
+    }
 
     .stats-list {
         width: 100%;
